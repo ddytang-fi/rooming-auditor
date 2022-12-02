@@ -8,10 +8,6 @@ mothership_file = st.file_uploader("Select mothership CSV file to upload")
 rooming_report_file = st.file_uploader("Select rooming report CSV file to upload")
 
 if mothership_file is not None and rooming_report_file is not None:
-    import numpy as np
-    import pandas as pd
-    import re
-
     # Read CSV files
     ms = pd.read_csv(mothership_file)
     rr = pd.read_csv(rooming_report_file)
