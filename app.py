@@ -117,7 +117,7 @@ if mothership_file is not None and rooming_report_file is not None:
         export_df.to_csv(f)
     with open('export_csv.csv') as f:
         st.download_button(
-            label='Download Processed File', 
+            label='Download Processed Audit File', 
             data=f, 
             file_name='rooming_audit.csv',
             mime='text/csv'
